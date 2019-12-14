@@ -1,5 +1,3 @@
-package com.hendrysa.myapplication;
-
 import java.util.HashMap;
 import org.json.JSONArray;
 import android.os.Bundle;
