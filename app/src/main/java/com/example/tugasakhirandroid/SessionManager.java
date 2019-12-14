@@ -1,5 +1,3 @@
-package com.hendrysa.myapplication;
-
 import java.util.HashMap;
 import android.annotation.SuppressLint;
 import android.content.Context;
