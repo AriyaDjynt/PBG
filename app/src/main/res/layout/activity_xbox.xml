@@ -9,7 +9,7 @@
     android:layout_marginLeft="-2dp"
     android:layout_marginRight="-2dp"
     android:layout_marginBottom="-1dp"
-    tools:context=".MainActivity">
+    tools:context=".Xbox">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -35,7 +35,7 @@
                     android:layout_marginTop="18dp"
                     android:layout_weight="1"
                     android:fontFamily="@font/segoebold"
-                    android:text="NEW"
+                    android:text="XBOX"
                     android:textColor="@color/colorPrimary"
                     android:textSize="12pt"
                     android:textStyle="bold" />
@@ -52,18 +52,6 @@
 
             </LinearLayout>
 
-            <com.synnapps.carouselview.CarouselView
-                android:id="@+id/carouselview"
-                android:layout_width="340dp"
-                android:layout_height="200dp"
-                android:layout_gravity="center"
-                android:layout_below="@+id/newtext"
-                android:layout_marginTop="18dp"
-                android:layout_marginBottom="-5dp"
-                app:fillColor="#FF9C2C"
-                app:indicatorMarginVertical="5dp"
-                app:pageColor="#ffffff" />
-
             <HorizontalScrollView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -75,47 +63,52 @@
                     android:orientation="horizontal" >
 
                     <ImageView
-                        android:id="@+id/playstation"
+                        android:id="@+id/action"
                         android:layout_width="100dp"
                         android:layout_height="100dp"
                         android:layout_marginLeft="10dp"
-                        android:src="@drawable/logoplaystation" />
+                        android:src="@drawable/genreaction" />
 
                     <ImageView
-                        android:id="@+id/xbox"
+                        android:id="@+id/adventure"
                         android:layout_width="100dp"
                         android:layout_height="100dp"
                         android:layout_marginLeft="10dp"
-                        android:src="@drawable/logoxbox" />
+                        android:src="@drawable/genreadventure" />
 
                     <ImageView
-                        android:id="@+id/pc"
+                        android:id="@+id/fighting"
                         android:layout_width="100dp"
                         android:layout_height="100dp"
                         android:layout_marginLeft="10dp"
-                        android:src="@drawable/logopc" />
+                        android:src="@drawable/genrefighting" />
 
                     <ImageView
-                        android:id="@+id/nintendo"
+                        android:id="@+id/shooting"
                         android:layout_width="100dp"
                         android:layout_height="100dp"
                         android:layout_marginLeft="10dp"
                         android:layout_marginRight="10dp"
-                        android:src="@drawable/logonintendo" />
+                        android:src="@drawable/genreshooting" />
+
+                    <ImageView
+                        android:id="@+id/simulation"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/genresimulation" />
+
+                    <ImageView
+                        android:id="@+id/strategy"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/genrestrategy" />
                 </LinearLayout>
 
             </HorizontalScrollView>
-
-            <TextView
-                android:id="@+id/mostviewtext"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="19dp"
-                android:fontFamily="@font/segoebold"
-                android:text="MOST VIEW"
-                android:textColor="@color/colorPrimary"
-                android:textSize="12pt"
-                android:textStyle="bold" />
 
             <androidx.recyclerview.widget.RecyclerView
                 android:layout_width="match_parent"

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:layout_marginTop="-2dp"
+    android:layout_marginLeft="-2dp"
+    android:layout_marginRight="-2dp"
+    android:layout_marginBottom="-1dp"
+    tools:context=".Login">
+
+    <TextView
+        android:id="@+id/textlogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="111dp"
+        android:fontFamily="@font/segoebold"
+        android:text="LOGIN"
+        android:textColor="@color/colorPrimary"
+        android:textSize="14pt"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/usernamelogin"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/textlogin"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="64dp"
+        android:background="@drawable/loginrectangle"
+        android:fontFamily="@font/segoebold"
+        android:hint="USERNAME"
+        android:paddingLeft="20dp"
+        android:textColor="@color/colorPrimary"
+        android:textColorHint="@color/colorPrimary"
+        android:textSize="14dp" />
+
+    <EditText
+        android:id="@+id/passwordlogin"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/usernamelogin"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/loginrectangle"
+        android:fontFamily="@font/segoebold"
+        android:hint="PASSWORD"
+        android:paddingLeft="20dp"
+        android:textColor="@color/colorPrimary"
+        android:textColorHint="@color/colorPrimary"
+        android:textSize="14dp" />
+
+    <ImageView
+        android:id="@+id/login"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/passwordlogin"
+        android:layout_marginTop="-10dp"
+        android:layout_alignEnd="@+id/passwordlogin"
+        android:src="@drawable/loginbutton"/>
+
+    <TextView
+        android:id="@+id/registerinlogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="47dp"
+        android:fontFamily="@font/segoebold"
+        android:text="REGISTER"
+        android:textColor="@color/colorPrimary"
+        android:textSize="8pt"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

@@ -9,14 +9,26 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Splashscreen">
+        <activity android:name=".NavigationDrawer">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".Register" />
+        <activity android:name=".Login">
+        </activity>
+        <activity android:name=".NintendoGenre" />
+        <activity android:name=".PcGenre" />
+        <activity android:name=".XboxGenre" />
+        <activity android:name=".PlaystationGenre" />
+        <activity android:name=".Nintendo" />
+        <activity android:name=".Pc" />
+        <activity android:name=".Xbox" />
+        <activity android:name=".Playstation" />
+        <activity android:name=".Splashscreen"></activity>
+        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>
