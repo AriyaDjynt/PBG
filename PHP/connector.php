@@ -9,7 +9,7 @@ $sql = mysqli_connect($databaseHost, $databaseUsername, $databasePassword, $data
 
 if (!$sql)
 {
-    echo "DB error";
+    die("Koneksi gagal: " . mysqli_connect_error());
 }
 
 ?>
