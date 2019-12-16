@@ -21,6 +21,8 @@ if(!empty($result))
 {
     $response->success = 1;
     $response->message = "Selamat datang ".$username;
+    $response->id = $row['id'];
+    $response->username = $row['username'];
     die(json_encode($response));
 }
 else
