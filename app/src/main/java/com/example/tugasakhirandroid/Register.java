@@ -1,5 +1,19 @@
-package com.hendrysa.myapplication;
+<<<<<<< HEAD
+package com.example.tugasakhirandroid;
 
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.os.Bundle;
+
+public class Register extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_register);
+    }
+}
+=======
 import java.util.ArrayList;
 import java.util.List;
 import java.util.regex.Matcher;
@@ -124,3 +138,4 @@ public class Register extends Activity
         }
     }
 }
+>>>>>>> 6a37a312a55bfda7d90ff5d8ad5d4fd3657111ef

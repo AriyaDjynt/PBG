@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:layout_marginTop="-2dp"
+    android:layout_marginLeft="-2dp"
+    android:layout_marginRight="-2dp"
+    android:layout_marginBottom="-1dp">
+
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/homenavigation"
+        android:title="Home" />
+    <item
+        android:id="@+id/myprofile"
+        android:icon="@drawable/myprofilenavigation"
+        android:title="My Profile" />
+    <item
+        android:id="@+id/aboutus"
+        android:icon="@drawable/aboutusnavigation"
+        android:title="About Us" />
+</menu>
