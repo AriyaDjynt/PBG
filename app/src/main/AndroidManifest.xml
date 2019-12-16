@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.tugasakhirandroid">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/logo"
@@ -9,16 +12,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".NavigationDrawer">
+        <activity android:name=".Login">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Register" />
-        <activity android:name=".Login">
-        </activity>
+
         <activity android:name=".NintendoGenre" />
         <activity android:name=".PcGenre" />
         <activity android:name=".XboxGenre" />
@@ -27,7 +28,6 @@
         <activity android:name=".Pc" />
         <activity android:name=".Xbox" />
         <activity android:name=".Playstation" />
-        <activity android:name=".Splashscreen"></activity>
         <activity android:name=".MainActivity" />
     </application>
 
