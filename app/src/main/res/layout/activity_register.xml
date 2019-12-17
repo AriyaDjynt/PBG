@@ -55,7 +55,7 @@
         android:textSize="14dp" />
 
     <ImageView
-        android:id="@+id/register"
+        android:id="@+id/login"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_below="@+id/password"
