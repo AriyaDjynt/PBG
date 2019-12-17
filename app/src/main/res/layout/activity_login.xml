@@ -48,6 +48,7 @@
         android:layout_marginTop="20dp"
         android:background="@drawable/loginrectangle"
         android:fontFamily="@font/segoebold"
+        android:inputType="textPassword"
         android:hint="PASSWORD"
         android:paddingLeft="20dp"
         android:textColor="@color/colorPrimary"
@@ -75,6 +76,5 @@
         android:textColor="@color/colorPrimary"
         android:textSize="8pt"
         android:textStyle="bold" />
-
 
 </RelativeLayout>

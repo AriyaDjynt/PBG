@@ -33,5 +33,4 @@ dependencies {
     implementation 'androidx.recyclerview:recyclerview:1.1.0'
     implementation 'com.github.bumptech.glide:glide:3.7.0'
     implementation 'com.android.support:design'
-    implementation 'com.android.volley:volley:1.1.0'
 }

@@ -7,8 +7,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class Playstation extends AppCompatActivity {
+    String place = "Playstation";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,8 +28,9 @@ public class Playstation extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 setContentView(R.layout.activity_playstation_genre);
-                TextView text = (TextView)findViewById(R.id.textplaystationgenre);
+                TextView text = (TextView) findViewById(R.id.textplaystationgenre);
                 text.setText("ACTION");
+                place = "ACTION";
             }
         });
         btnadventure.setOnClickListener(new View.OnClickListener() {
@@ -70,6 +73,16 @@ public class Playstation extends AppCompatActivity {
                 text.setText("STRATEGY");
             }
         });
+    }
 
+    @Override
+    public void onBackPressed() {
+        if(place.equals("Playstation")) {
+            startActivity(new Intent(Playstation.this, MainActivity.class));
+            finish();
+        } else if(place.equals("ACTION")) {
+            startActivity(new Intent(Playstation.this, Playstation.class));
+            finish();
+        }
     }
 }
