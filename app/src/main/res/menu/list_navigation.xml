@@ -10,9 +10,9 @@
     android:layout_marginBottom="-1dp">
 
     <item
-        android:id="@+id/home"
-        android:icon="@drawable/homenavigation"
-        android:title="Home" />
+        android:id="@+id/login"
+        android:icon="@drawable/loginnavigation"
+        android:title="Login"/>
     <item
         android:id="@+id/myprofile"
         android:icon="@drawable/myprofilenavigation"
