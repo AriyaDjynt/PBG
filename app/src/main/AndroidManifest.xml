@@ -12,8 +12,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Search"></activity>
-        <activity android:name=".Login"></activity>
+        <activity
+            android:name=".Main2Activity"
+            android:label="@string/title_activity_main2"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".Search" />
+        <activity android:name=".Login" />
         <activity android:name=".NintendoGenre" />
         <activity android:name=".PcGenre" />
         <activity android:name=".XboxGenre" />
@@ -22,15 +26,15 @@
         <activity android:name=".Pc" />
         <activity android:name=".Xbox" />
         <activity android:name=".Playstation" />
-        <activity android:name=".MainActivity" />
-        <activity android:name=".Splashscreen">
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Register" />
+        <activity android:name=".Splashscreen"></activity>
+        <activity android:name=".Register"></activity>
     </application>
 
 </manifest>

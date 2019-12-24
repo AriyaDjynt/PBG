@@ -1,5 +1,8 @@
 package com.example.tugasakhirandroid;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
@@ -10,6 +13,8 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.ActionProvider;
+import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ImageView;
 import android.view.View;
@@ -22,7 +27,7 @@ import com.synnapps.carouselview.ImageListener;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
+public class MainActivity extends AppCompatActivity{
     //Carousel
     CarouselView carouselView;
     int[] sampleImages = {R.drawable.image1, R.drawable.image2, R.drawable.image3, R.drawable.image4, R.drawable.image5};
@@ -34,6 +39,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     List<ModelRecycler> list;
     ModelRecycler modelRecycler;
     AdapterRecycler adapterRecycler;
+
+    private DrawerLayout myDrawer;
+    private ActionBarDrawerToggle myToogle;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -99,6 +107,12 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 finish();
             }
         });
+
+        myDrawer = (DrawerLayout)findViewById(R.id.drawerlayout);
+        myToogle = new ActionBarDrawerToggle(this, myDrawer, R.string.Open, R.string.Close);
+        myDrawer.addDrawerListener(myToogle);
+        myToogle.syncState();
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
     //Carousel ImageListener
     ImageListener imageListener = new ImageListener() {
@@ -119,12 +133,20 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     }
 
     @Override
-    public boolean onNavigationItemSelected(MenuItem item) {
-        int id = item.getItemId();
-        if(id == R.id.login){
-            Log.i("debug", String.valueOf(id));
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        if (myToogle.onOptionsItemSelected(item)){
+            return true;
         }
-
-        return true;
+        return super.onOptionsItemSelected(item);
     }
+
+    //    @Override
+//    public boolean onNavigationItemSelected(MenuItem item) {
+//        int id = item.getItemId();
+//        if(id == R.id.login){
+//            Log.i("debug", String.valueOf(id));
+//        }
+//
+//        return true;
+//    }
 }

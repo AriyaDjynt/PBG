@@ -8,6 +8,7 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -34,7 +35,7 @@ public class Register extends AppCompatActivity {
         setContentView(R.layout.activity_register);
         username = findViewById(R.id.username);
         password = findViewById(R.id.password);
-        TextView register = findViewById(R.id.textregister);
+        ImageView register = findViewById(R.id.register);
 
 
         register.setOnClickListener(new View.OnClickListener() {

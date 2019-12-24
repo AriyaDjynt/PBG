@@ -14,4 +14,7 @@
     <string name="menu_tools">Tools</string>
     <string name="menu_share">Share</string>
     <string name="menu_send">Send</string>
+    <string name="Open"></string>
+    <string name="Close"></string>
+    <string name="title_activity_main2">Main2Activity</string>
 </resources>

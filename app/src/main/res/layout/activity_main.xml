@@ -9,9 +9,9 @@
     android:layout_marginLeft="-2dp"
     android:layout_marginRight="-2dp"
     android:layout_marginBottom="-1dp"
-    tools:openDrawer="start"
-    android:fitsSystemWindows="true"
     android:id="@+id/drawerlayout"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
     tools:context=".MainActivity">
 
     <com.google.android.material.navigation.NavigationView
